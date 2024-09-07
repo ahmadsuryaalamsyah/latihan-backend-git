@@ -7,16 +7,16 @@ app.use(express.json());
 
 // Endpoint untuk register user
 app.post('/register', (req: Request, res: Response) => {
-    const { username, password } = req.body;
-    res.send('User registered');
+  const { username, password } = req.body;
+  res.send('User registered');
 });
 
 // Endpoint untuk login user
 app.post('/login', (req: Request, res: Response) => {
-    const { username, password } = req.body;
-    res.send('User logged in');
+  const { username, password } = req.body;
+  res.send('User logged in');
 });
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+  console.log(`Server running on port ${port}`);
 });
