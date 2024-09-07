@@ -21,6 +21,7 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
+// Endpoint untuk menambah produk
 app.post('/products', (req: Request, res: Response) => {
   const { name, price } = req.body;
   res.send('Product added');
