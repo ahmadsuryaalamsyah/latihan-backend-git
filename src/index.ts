@@ -30,3 +30,14 @@ app.post('/products', (req: Request, res: Response) => {
 app.get('/products', (req: Request, res: Response) => {
   res.send('List of products');
 });
+
+// Endpoint untuk membuat order
+app.post('/orders', (req: Request, res: Response) => {
+  const { productId, quantity } = req.body;
+  res.send('Order created');
+});
+
+// Endpoint untuk mendapatkan semua order
+app.get('/orders', (req: Request, res: Response) => {
+  res.send('List of orders');
+});
